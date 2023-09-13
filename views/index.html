@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/css/home.css">
+    <title>PUNTO TECH</title>
+</head>
+<body>
+
+    <header><img src="../public/img/Logo/2.png" alt="logonav"></header>
+
+    <button id="toggle-menu">☰</button>
+
+    <button id="log-in" class="log-inbt">
+        <img src="../public/img/Miniaturas/avatar.png" id="imglogin" alt="">
+        ENTRAR
+    </button>
+        <nav id="menu">
+            <div class="slider-container">
+                <ul class="slider-list">
+                <li><a href="#">ELECTRO</a></li>
+                <li><a href="#">ILUMINACION</a></li>
+                <li><a href="#">CELULARES</a></li>
+                <li><a href="#">DETALLIN</a></li>
+            </ul>
+            </div>
+        </nav>
+
+        <section>
+            <article>
+            <hgroup></hgroup>
+            <time></time>
+            <p></p>
+            <footer></footer>
+            </article>
+        </section>
+    <aside>
+        <blockquote></blockquote>
+    </aside>
+    <footer></footer>
+</body>
+<script>
+ document.addEventListener("DOMContentLoaded", function() {
+    const sliderList = document.querySelector(".slider-list");
+    let scrollAmount = 0;
+
+    function setSliderWidth() {
+        const itemWidth = sliderList.firstElementChild.offsetWidth;
+        const itemCount = sliderList.children.length;
+        const totalWidth = itemWidth * itemCount;
+        sliderList.style.width = `${totalWidth}px`;
+    }
+
+    // Llamar a setSliderWidth para establecer el ancho inicial
+    setSliderWidth();
+
+    // Agregar eventos de clic para desplazarse con el mouse
+    sliderList.addEventListener("mousedown", (event) => {
+        event.preventDefault();
+        const startX = event.clientX;
+        const initialScrollAmount = scrollAmount;
+
+        function onMouseMove(event) {
+            const offsetX = event.clientX - startX;
+            scrollAmount = Math.max(0, initialScrollAmount - offsetX);
+            scrollAmount = Math.min(scrollAmount, sliderList.scrollWidth - sliderList.offsetWidth);
+            sliderList.style.transform = `translateX(-${scrollAmount}px)`;
+        }
+
+        function onMouseUp() {
+            window.removeEventListener("mousemove", onMouseMove);
+            window.removeEventListener("mouseup", onMouseUp);
+        }
+
+        window.addEventListener("mousemove", onMouseMove);
+        window.addEventListener("mouseup", onMouseUp);
+    });
+
+    // Agregar evento de desplazamiento táctil para dispositivos móviles
+    sliderList.addEventListener("touchstart", (event) => {
+        const touch = event.touches[0];
+        const startX = touch.clientX;
+        const initialScrollAmount = scrollAmount;
+
+        function onTouchMove(event) {
+            const touch = event.touches[0];
+            const offsetX = touch.clientX - startX;
+            scrollAmount = Math.max(0, initialScrollAmount - offsetX);
+            scrollAmount = Math.min(scrollAmount, sliderList.scrollWidth - sliderList.offsetWidth);
+            sliderList.style.transform = `translateX(-${scrollAmount}px)`;
+        }
+
+        function onTouchEnd() {
+            sliderList.removeEventListener("touchmove", onTouchMove);
+            sliderList.removeEventListener("touchend", onTouchEnd);
+        }
+
+        sliderList.addEventListener("touchmove", onTouchMove);
+        sliderList.addEventListener("touchend", onTouchEnd);
+    });
+});
+
+</script>
