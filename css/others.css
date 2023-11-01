@@ -1,0 +1,39 @@
+.list-inline .who-text{
+    font-size: larger;
+    padding-bottom: 5%;}
+
+.img-who{
+    position: absolute;
+    bottom:30%;
+    left:85%;
+    border-radius: 10%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    width: 20%;
+}
+.container-snd{
+    width: 50%;
+    height: auto;
+    margin: auto;
+    padding-top : 20px;
+    padding-bottom: 20px;
+    background-color: #ffffff;
+}
+.containersd{
+    background-color: #ffffff;
+
+}
+
+/*CARUSEL YT*/
+.slider {
+    width: 80%;
+    margin: 0 auto;
+}
+.ytcarusel{
+    padding-left: 70px;
+    padding-right: 70px;
+    z-index: 132;
+}
+.slick-prev, .slick-next {
+    width: 40px; /* Aumenta el ancho */
+    height: 40px; /* Aumenta la altura */
+}
