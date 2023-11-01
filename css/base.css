@@ -438,7 +438,7 @@ transform: translateX(0);
 
 .container{
     position:relative;
-    padding-top: 3%;
+    padding-top:5%;
 }
 
 .indent {
@@ -610,7 +610,7 @@ section.main{
 
 
 div[class*="col-"].gap-one-bottom-md, .gap-one-bottom-md{
-    padding-bottom: 5rem;
+    padding-bottom: 2rem;
 }
 
 

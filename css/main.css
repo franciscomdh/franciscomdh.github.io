@@ -473,7 +473,7 @@ Created by : mutationthemes
 }
 
 .block-album-info li span, .block-presale li span{
-    border-bottom: 1px dashed rgba(255,255,255,.3) ;
+    border-bottom: 1px dashed rgba(248, 244, 244, 0.3) ;
 }
  .block-teaser{
      text-transform: uppercase;
