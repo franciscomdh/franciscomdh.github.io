@@ -37,3 +37,39 @@
     width: 40px; /* Aumenta el ancho */
     height: 40px; /* Aumenta la altura */
 }
+/* FORM */
+form {
+    max-width: 400px;
+    width: 50%;  
+    display: inline;
+    
+}
+
+label, input, textarea {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    padding-top: 1rem;
+}
+
+#Btn-Send{
+    display: inline-block; 
+    padding: 10px 20px;
+    text-align: center;
+    
+}
+input,textarea{
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+#logoform{
+    height: 50%;
+    position: static;
+    margin-bottom: 0;
+    margin-right: 10%;
+    display: inline-block;
+    
+}
+#contact-form{
+    padding-left: 2%;
+}

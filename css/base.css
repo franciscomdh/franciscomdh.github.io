@@ -438,7 +438,7 @@ transform: translateX(0);
 
 .container{
     position:relative;
-    padding-top:5%;
+    padding-top:2%;
 }
 
 .indent {
@@ -605,7 +605,7 @@ section.divider{
 
 section.main{
 
-    padding-bottom: 7.42857rem;
+    padding-bottom: 1.42857rem;
 }
 
 
