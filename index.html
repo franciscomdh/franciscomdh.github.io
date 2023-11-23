@@ -121,7 +121,7 @@
                         <li><a class="scroll list-inline-item" href="#whoiam">About</a></li>
                         <li><a class="scroll list-inline-item" href="#soundcloud">Soundcloud</a></li>
                         <li><a class="scroll list-inline-item" href="#discography">Discography</a></li>
-                        </li>
+                        <li><a class="scroll list-inline-item" href="#gallery">Gallery</a></li>
                         <li><a class="scroll list-inline-item" href="#contact">Contact</a></li>
                         
                         <li class="block-helper">
@@ -133,6 +133,7 @@
                </div>
             </header>
             <!--End header-->
+            
          </section>
          <section id="tour" class="tour  main bg-secondary">
             <!--Container-->
@@ -144,9 +145,13 @@
                         <div class="block-title ">
                            <h1 class="uppercase">Last hit!</h1>
                         </div>
+                        
                      </div>
                   </div>
                </div>
+               <iframe width="100%" height="206" scrolling="no" frameborder="no" allow="autoplay"
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1634408490&amp;{ ADD YOUR PARAMETERS HERE }">
+            </iframe>
                <!--End row-->
             </div>
             </section>
@@ -192,7 +197,7 @@
                               
                               In 1974, I moved to the big apple to pursue a career on stage and formed a duo known as Ivory Tower. We played the night club circuit and this led to a position as MC, Host and Entertainment Coordinator in a club in the village called Kelly's Village West. The club was filled 5 nights a week and as a result I was called to audition for a National Broadway Tour. I played a belligerent 18 year old rock star in The National Lampoon Show and for 6 months toured most of the US and Canada. Another great feather in my “street” educational cap.
                               
-                               I began seriously composing songs in 1973 and still have that passion to sing whenever possible. As for writing songs, that love affair will never end!</p></li>
+                              I began seriously composing songs in 1973 and still have that passion to sing whenever possible. As for writing songs, that love affair will never end!</p></li>
                            </ul>
                         </div>
                         <ul class="block-social list-inline mt-4">
@@ -207,7 +212,7 @@
                   </div>
 
                </div>
-               <img class="img-who" src="img/Dadd Wins Circa 1956.jpg" alt="whoiam">
+               <img class="img-who" src="img/whoiam.jpg" alt="whoiam">
                <!--End row-->
             </div>
             <!--End container-->
@@ -549,17 +554,18 @@
                <div class="row justify-content-center">
                
                      <img src="img/logo.png" alt="logo" id="logoform">
-                     <form id="contact-form">
-                        <label for="nombre">Full name:</label>
-                        <input type="text" id="nombre" name="nombre" placeholder="name" required>
-                        
-                        <label for="correo">Email:</label>
-                        <input type="email" id="correo" name="correo" placeholder="email" required>
-                        
-                        <label for="mensaje">Message:</label>
-                        <textarea id="mensaje" name="mensaje" rows="4" placeholder="message" required></textarea>
-                        
-                        <input type="submit" value="Enviar" id="Btn-Send">
+                     <form action="https://formsubmit.co/fran.manuel1@hotmail.com" method="POST">
+                        <label>Full name:
+                        <input type="text"  name="name" placeholder="name" required>
+                     </label>
+                        <label>Email:
+                        <input type="email"  name="email" placeholder="email" required>
+                     </label>
+                        <label>Message:
+                        <textarea name="textarea" rows="4" placeholder="message" required></textarea>
+                     </label>
+                        <button type="submit" id="Btn-Send">Send</button>
+                     
                      </form>
                   </div>
                </div>
