@@ -8,6 +8,8 @@
     url('../font/Socicon.svg?jxsw4b#Socicon') format('svg');
   font-weight: normal;
   font-style: normal;
+}
+@font-face{
   font-family: 'Dosis';
   src: url('../font/Dosis/Dosis-Bold.ttf');
   src: url('../font/Dosis/Dosis-ExtraBold.ttf');
