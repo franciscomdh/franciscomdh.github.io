@@ -33,10 +33,10 @@
     padding-right: 70px;
     z-index: 132;
 }
-.slick-prev, .slick-next {
-    width: 40px; /* Aumenta el ancho */
-    height: 40px; /* Aumenta la altura */
+.slick-prev{
+    font-size: 100px;
 }
+
 /* FORM */
 form {
     max-width: 400px;

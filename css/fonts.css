@@ -8,6 +8,14 @@
     url('../font/Socicon.svg?jxsw4b#Socicon') format('svg');
   font-weight: normal;
   font-style: normal;
+  font-family: 'Dosis';
+  src: url('../font/Dosis/Dosis-Bold.ttf');
+  src: url('../font/Dosis/Dosis-ExtraBold.ttf');
+  src: url('../font/Dosis/Dosis-ExtraLight.ttf');
+  src: url('../font/Dosis/Dosis-Light.ttf');
+  src: url('../font/Dosis/Dosis-Medium.ttf');
+  src: url('../font/Dosis/Dosis-Regular.ttf');
+  src: url('../font/Dosis/Dosis-SemiBold.ttf');
 }
 
 [class^="socicon-"], [class*=" socicon-"] {
