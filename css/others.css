@@ -51,12 +51,26 @@ label, input, textarea {
     width: 100%;
     padding-top: 1rem;
 }
-
+form {
+    font-family: 'Dosis';
+    font-size: large;
+}
+form label{
+    margin-bottom: 10px;
+}
+form input{
+    border-radius: 2%;
+}
 #Btn-Send{
     display: inline-block; 
     padding: 10px 20px;
     text-align: center;
     z-index: 1000;
+    
+}
+#Btn-Send:hover{
+    background-color: #6c757d;
+    color: rgb(252, 252, 252);
 }
 input,textarea{
     padding-left: 10px;
