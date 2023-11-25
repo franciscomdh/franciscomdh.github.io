@@ -868,7 +868,6 @@
    <script src="js/jquery.flexslider-min.js"></script>
    <script src="js/smooth-scroll.js"></script>
    <script src="js/jquery.magnific-popup.min.js"></script>
-   <script src="js/audio.min.js"></script>
    <script src="js/twitterFetcher_min.js"></script>
    <script src="js/jquery.countdown.min.js"></script>
    <script src="js/placeholders.min.js"></script>
@@ -894,17 +893,6 @@
             prevArrow: '<button type="button" class="slick-prev">Previous</button>',
             nextArrow: '<button type="button" class="slick-next">Next</button>',
          });
-      });
-   </script>
-   <script>
-      document.getElementById("contact-form").addEventListener("submit", function (event) {
-         event.preventDefault();
-
-         const formData = new FormData(this);
-
-         const mensaje = `Nombre: ${formData.get("nombre")}\nCorreo Electrónico: ${formData.get("correo")}\nMensaje:\n${formData.get("mensaje")}`;
-
-
       });
    </script>
 </body>
