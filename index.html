@@ -40,6 +40,9 @@
    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,300,400,400i,600,700,800" rel="stylesheet">
    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
    <link rel="icon" type="image/jpeg" href="img/logo.png">
+   <style>
+
+   </style>
 </head>
 
 <body>
@@ -93,13 +96,13 @@
       <!--Hero section-->
       <section class="hero">
          <div class="background-img overlay zoom">
-            <img src="img/bg.jpg" alt="">
+            <img id="imgBg"  src="img/bg.jpg" alt="">
          </div>
          <!--Main slider-->
          <div class="main-slider slider flexslider">
 
             <ul class="slides">
-               <li>
+               <li>  
 
                   <!--Container-->
                   <div class="container hero-content">
@@ -149,6 +152,7 @@
 
                <li class="block-helper">
                   <a href="#album" class="scroll"><span><i class="icon-cd-2"></i></span></a>
+               <li> <a href="manageuser.html"><i class="socicon-player"></i></a></li>
                </li>
 
             </ul>
@@ -172,9 +176,24 @@
                </div>
             </div>
          </div>
-         <iframe width="100%" height="206" scrolling="no" frameborder="no" allow="autoplay"
+         <iframe width="100%" height="206" scrolling="no" frameborder="no" allow="autoplay" id="lastHit"
             src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1634408490&amp;{ ADD YOUR PARAMETERS HERE }">
          </iframe>
+         
+         <script>
+            // Script en la primera página
+            document.addEventListener('DOMContentLoaded', function() {
+                // Obtén el parámetro 'track' de la URL
+                var urlParams = new URLSearchParams(window.location.search);
+                var trackUrl = urlParams.get('track');
+        
+                // Si se proporciona un parámetro 'track', actualiza el src del iframe
+                if (trackUrl) {
+                    document.getElementById('lastHit').src = "https://w.soundcloud.com/player/?url=" + encodeURIComponent(trackUrl);
+                }
+            });
+        </script>
+        
          <!--End row-->
       </div>
    </section>
@@ -319,7 +338,7 @@
       <div class="container">
          <!--Row-->
 
-         <div class="ytcarusel">
+         <div id="ytCarousel"class="ytcarusel">
             <div><iframe width="360" height="515" src="https://www.youtube.com/embed/72oXbaPk8R4?si=7aeDs0YIJruu5ctY"
                   title="YouTube video player" frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -356,10 +375,12 @@
                   title="YouTube video player" frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowfullscreen></iframe></div>
+               
          </div>
 
          <!-- End You tube carusel-->
-
+         
+            
       </div>
       </div>
       <!--End row-->
@@ -387,10 +408,10 @@
       </div>
       <!--End container-->
       <!--Container-->
-      <div class="container">
+      <div class="container" >
          <!--Row-->
 
-         <div class="row">
+         <div class="row" id="album-container">
             <div class="col-12 col-md-6 col-lg-3">
                <div class="block-album block-content">
                   <h5 class="mb-0 opc-70 uppercase">Hello Lord</h5>
@@ -635,7 +656,7 @@
                   <h5 class="mb-0 uppercase opc-70">Waterfalls and Rainbows</h5>
                   <br>
                   <img class="animated" src="img/album/Waterfalls and rainbows.webp" alt="">
-                  </a>
+                  
                   <ul class="block-social list-inline mb-md-3">
                      <li class="list-inline-item mr-0"><a
                            href="https://music.apple.com/us/album/waterfalls-and-rainbows/1522042524?i=1522042525"
@@ -650,6 +671,7 @@
                   </ul>
                </div>
             </div>
+            
          </div>
          <!--End row-->
       </div>
@@ -807,7 +829,7 @@
                         class="socicon-twitter"></i> </a>
                </li>
                <li class="list-inline-item">
-                  <a href="https://www.youtube.com/channel/UCOZ9yJYw1uA3c6ejThNRgLw" target="_blank" rel="noreferrer"><i
+                  <a href="https://www.youtube.com/channel/UC3axiOycyvleydgUpJCZhbA?view_as=subscriber" target="_blank" rel="noreferrer"><i
                         class="socicon-youtube"></i> </a>
                </li>
                <li class="list-inline-item">
@@ -817,6 +839,14 @@
                <li class="list-inline-item">
                   <a href="https://johnarthurfoster.bandcamp.com/album/recipes-for-love-remixed-and-mastered"
                      target="_blank" rel="noreferrer"><i class="socicon-bandcamp"></i></a>
+               </li>
+               <li class="list-inline-item">
+                  <a href="https://open.spotify.com/intl-es/artist/0pyJhCDqaJPtKQtiZPhkhP?si=2z_51PMkQOCmaxLnhGZ14A"
+                     target="_blank" rel="noreferrer"><i class="socicon-spotify"></i></a>
+               </li>
+               <li class="list-inline-item">
+                  <a href="https://soundcloud.com/john-arthur-foster-1?ref=clipboard&p=i&c=1&si=F3E2AC5684B74319AA7BA22EF11C0B32&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
+                     target="_blank" rel="noreferrer"><i class="socicon-soundcloud"></i></a>
                </li>
             </ul>
          </div>

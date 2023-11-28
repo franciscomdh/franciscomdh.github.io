@@ -9,7 +9,7 @@
         // Site loader 
 
         $(".loader-inner").fadeOut();
-        $(".loader").delay(100).fadeOut("slow");
+        $(".loader").delay(200).fadeOut("slow");
 
     });
 
@@ -188,6 +188,8 @@ var $this = $(this).html(event.strftime(''
         }
     });
 
+
+   
 
 
 

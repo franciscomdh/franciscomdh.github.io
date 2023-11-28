@@ -177,9 +177,11 @@ Created by : mutationthemes
 /*End to the top*/
 /* Hero Section*/
  section.hero {
+    background-image: url(/img/bg.jpg);
      background: #222222;
      padding: 0;
      overflow:hidden;
+     margin: 0  ;
 }
  .background-img img {
      display: none;
@@ -187,7 +189,8 @@ Created by : mutationthemes
  .background-img {
      width: 100%;
      height: 100%;
-    
+    background-size: cover;
+    background-position: center;
 }
  .background-img {
      background-attachment: scroll;
@@ -795,10 +798,15 @@ Created by : mutationthemes
 }
 /*End footer*/
 /*Media queries*/
+
 @media all and (max-width: 990px) {
-
-
-    .header .left-part,
+.background-img{
+    display: none;
+  }
+  .img-who{
+    display: none;
+}
+.header .left-part,
      .header .right-part {
           float: none;
           display: block;
@@ -889,13 +897,17 @@ Created by : mutationthemes
 
   
 @media only screen and (min-device-width: 720px) and (max-device-width: 1280px) and (orientation: portrait) {
+    .img-who{
+        display: none;
+    }
     input,
     textarea {
         -webkit-appearance: none;
     }
 }
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: landscape) {
-  .card-gallery.image-gallery > a > img {
+  
+    .card-gallery.image-gallery > a > img {
     margin-bottom: .75em;
 }
 
@@ -904,7 +916,9 @@ Created by : mutationthemes
 
 
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px)  {
-
+    .img-who{
+        display: none;
+    }
   .card-gallery.image-gallery > a > img {
     margin-bottom: .75em;
 }
@@ -919,6 +933,9 @@ h3, .h3{
   
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .img-who{
+        display: none;
+    }
     input,
     textarea {
         -webkit-appearance: none;
@@ -942,6 +959,9 @@ section.about a.btn-primary i{display: none;}
 
 }
 @media only screen and (min-width: 768px) and (max-width: 960px) {
+    .img-who{
+        display: none;
+    }
     input,
     textarea {
         -webkit-appearance: none;
@@ -974,6 +994,9 @@ h1.large{font-size: 4rem;}
 
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
+    .img-who{
+        display: none;
+    }
     input,
     textarea {
         -webkit-appearance: none;
@@ -1029,6 +1052,9 @@ section.about .block-content.text-md-right, .block-album {margin-bottom: 1.875em
 
 }
 @media only screen and (max-width: 479px) {
+    .img-who{
+        display: none;
+    }
     input,
     textarea {
         -webkit-appearance: none;
@@ -1086,4 +1112,5 @@ section.about .block-content.text-md-right, .block-album {margin-bottom: 1.875em
 
     
 }
+
 /*End media queries*/

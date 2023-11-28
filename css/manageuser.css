@@ -1,0 +1,59 @@
+@font-face{
+    font-family: 'Dosis';
+    src: url('../font/Dosis/Dosis-Bold.ttf');
+    src: url('../font/Dosis/Dosis-ExtraBold.ttf');
+    src: url('../font/Dosis/Dosis-ExtraLight.ttf');
+    src: url('../font/Dosis/Dosis-Light.ttf');
+    src: url('../font/Dosis/Dosis-Medium.ttf');
+    src: url('../font/Dosis/Dosis-Regular.ttf');
+    src: url('../font/Dosis/Dosis-SemiBold.ttf');
+  }
+*{
+    background-color: #222222;
+    font-family: 'Dosis';
+    color: aliceblue;
+}
+h1{text-align: center;background-color: darkgray;}
+.btnback{
+    padding: 10px 30px;background-color: darkgray;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.btnback:hover{
+    background-color: #222222;
+    border-color: aliceblue;
+    color: aliceblue;
+    display: block;
+}
+#loginSection{background-color: darkgray;
+    text-align: center;
+}
+#loginSection label{background-color: darkgray;
+    display: block;
+    padding-bottom: 10px;
+}
+.logInfields{
+background-color: darkgray;
+padding-top: 3%;
+padding-bottom: 3%;
+}
+.logInfields input{
+    padding:5px;
+    margin-bottom: 20px;
+   
+}
+.logInfields button{
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+}
+.logInfields button:hover{
+    background-color:aliceblue;
+    color: #222222;
+}
+#logoedit{
+    width:20%;
+    height: auto;
+    margin: auto;
+    display:block;
+}
