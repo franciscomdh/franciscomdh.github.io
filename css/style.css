@@ -18,6 +18,16 @@ Assigned to: ThemeForest
 8. Footer css Start / .prt_footer_wrapper
 9. Responsive css Start / .prt_counter_box
 -------------------------------------------------------------------*/
+/*============================== FONTS ===================================*/
+@font-face {
+    font-family: 'Corporation-Games';
+    src: url(../fonts/Corporation\ Games\ Straight.otf);
+} 
+@font-face {
+    font-family: 'Squaresharps' ;
+    src: url(../fonts/Squaresharps\ Italic.ttf);
+}
+
 /*--------- Body Strat -------*/
 body {
 	font-family: 'Montserrat', sans-serif;
@@ -202,23 +212,26 @@ input:focus, textarea:focus, select:focus, button:focus {
 	position:absolute;
 	top:35%;
 	font-size:150px;
+	color: #dbaf00;
+	font-weight:bold;
+    background-size: cover;
+    background-position: -41px -85px;
+    z-index: 100px;
+    font-family: 'Corporation-Games';
+    letter-spacing: 3px;
+    padding-right: 60%;
+    }
+
+.prt_home_wrapper h2{
+	position:absolute;
+	top:53%;
+	font-size:55px;
 	color: #ffffff;
 	font-weight:bold;
     background-size: cover;
     background-position: -41px -85px;
     z-index: 100px;
-
-}
-
-.prt_home_wrapper h2{
-	position:absolute;
-	top:55%;
-	font-size:30px;
-	color: #ffd200;
-	font-weight:bold;
-    background-size: cover;
-    background-position: -41px -85px;
-    z-index: 100px;
+    font-family: 'Squaresharps';
 }
 
 .prt_logo_wrapper img{
