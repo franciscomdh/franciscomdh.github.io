@@ -56,9 +56,9 @@
   cursor: progress; }
 
 .mfp-zoom-out-cur, .mfp-zoom-out-cur .mfp-image-holder .mfp-close {
- /* cursor: -moz-zoom-out;
+  cursor: -moz-zoom-out;
   cursor: -webkit-zoom-out;
-  cursor: zoom-out;*/ }
+  cursor: zoom-out; }
 
 .mfp-zoom {
   cursor: pointer;
@@ -301,7 +301,6 @@ img.mfp-img {
   /**
        * Remove all paddings around the image on small screen
        */
-       
   .mfp-img-mobile .mfp-image-holder {
     padding-left: 0;
     padding-right: 0; }
@@ -338,7 +337,6 @@ img.mfp-img {
     padding: 0; } }
 
 @media all and (max-width: 900px) {
-   
   .mfp-arrow {
     -webkit-transform: scale(0.75);
     transform: scale(0.75); }

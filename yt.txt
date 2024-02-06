@@ -1,8 +1,0 @@
-1
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Cj18zsVSaho?si=vfXFKm9tb0g7YCRx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-2
-<iframe width="560" height="315" src="https://www.youtube.com/embed/1-cF6KvCXnE?si=eVGn7euKpUCPSdQv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-3
-<iframe width="560" height="315" src="https://www.youtube.com/embed/6m0afdRYR50?si=JlmWHPzBjQ2wT5aj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-4
-<iframe width="560" height="315" src="https://www.youtube.com/embed/nnByU96BB_c?si=k6Q6YqyiTnojHCXI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
